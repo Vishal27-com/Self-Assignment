@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated | Logo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="circle">
+    <div class="logo"></div>
+    <div class="text">
+        <p>Vishal Gupta Full Stack Web Developer</p>
+    </div>
+   </div>
+</body>
+<script>
+    const text=document.querySelector(".text p");
+    text.innerHTML=text.innerText.split("").map(
+        (char,i)=>
+        `<span style="transform:rotate(${i*9.5}deg)">${char}</span>`
+    ).join("")
+</script>
+</html>
